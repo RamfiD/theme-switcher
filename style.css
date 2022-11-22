@@ -31,13 +31,10 @@ body {
   font-size: 1.6rem;
 
   min-height: 100vh;
+  background: var(--bg-color);
 
   display: flex;
   place-items: center;
-}
-
-body {
-  background: var(--bg-color);
 }
 
 main {
@@ -97,8 +94,8 @@ ul li + li {
 
 input[type="radio"] {
   appearance: none;
-  border: 1px solid var(--border-color);
-  border-radius: 50%;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 5rem;
 
   width: 1.9rem;
   height: 1.9rem;
