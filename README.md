@@ -1,5 +1,3 @@
-# Theme Switcher
-
 ![preview](./.github/preview.png)
 
-[🔗 See this project working](https://ramfid.github.io/theme-switcher/)
+[🔗 Theme Switcher](https://ramfidev.github.io/theme-switcher/)

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -8,23 +8,25 @@
 
 :root {
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #light,
 :root:has(#light:checked) {
-  --bg-color: #d1d5d8;
-  --main-bg-color: #efefef;
-  --border-color: #bdbdbd;
-  --text-color: #121214;
+  --bg-color: #ecf0f1;
+  --main-bg-color: #f8f8f8;
+  --border-color: #dbdbdb;
+  --title-color: #3f3f3f;
+  --text-color: #222222;
 }
 
 #dark,
 :root:has(#dark:checked) {
-  --bg-color: #121214;
-  --main-bg-color: #202024;
-  --border-color: #323238;
-  --text-color: white;
+  --bg-color: #1a1a1a;
+  --main-bg-color: #222222;
+  --border-color: #333333;
+  --title-color: white;
+  --text-color: #ecf0f1;
 }
 
 body {
@@ -40,7 +42,6 @@ body {
 main {
   max-width: 60rem;
   background: var(--main-bg-color);
-  color: var(--text-color);
 
   margin: 0 auto;
   padding: 2.8rem;
@@ -50,11 +51,13 @@ main {
 }
 
 main article h2 {
+  color: var(--title-color);
   margin-block: 1.6rem;
 }
 
 main article p {
-  opacity: 0.8;
+  color: var(--text-color);
+  line-height: 2rem;
 
   margin-bottom: 1rem;
 }
@@ -92,7 +95,7 @@ ul li + li {
   padding-left: 1.6rem;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   appearance: none;
   border: 0.1rem solid var(--border-color);
   border-radius: 5rem;
@@ -104,7 +107,7 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-input[type="radio"]:checked {
+input[type='radio']:checked {
   background: var(--text-color);
 }
 
